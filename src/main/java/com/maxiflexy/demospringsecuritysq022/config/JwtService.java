@@ -18,8 +18,7 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    private final static String SECRET_KEY = "LyOgMjE1GbXf5uG5dKK06t33/hpbGwpQwLxLBOQzuSxx6hgcUuJXqgb0stuSGDGL\n" +
-            "Msfq/vbcZax0qArrbRAsEA==";
+    private final static String SECRET_KEY = "tC3o1uK7vc3a675wrL5V9tODooSVOmmQA6LY87227tH+4jQAGamq2bUOJFi8NUwi6VGMeQ+MIz+aw2URCLWEbQ==";
 
     // extract all claims
 

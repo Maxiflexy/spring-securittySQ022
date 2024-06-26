@@ -1,6 +1,8 @@
 package com.maxiflexy.demospringsecuritysq022.controller;
 
 import com.maxiflexy.demospringsecuritysq022.dto.AuthResponseDto;
+import com.maxiflexy.demospringsecuritysq022.dto.LoginRequestDto;
+import com.maxiflexy.demospringsecuritysq022.dto.LoginResponse;
 import com.maxiflexy.demospringsecuritysq022.dto.RegistrationDto;
 import com.maxiflexy.demospringsecuritysq022.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -20,5 +22,10 @@ public class UserController {
     @PostMapping("/register-user")
     public ResponseEntity<AuthResponseDto> registerUser(@RequestBody RegistrationDto registrationDto){
         return ResponseEntity.ok(userService.registerUser(registrationDto));
+    }
+
+    @PostMapping("/login-user")
+    public ResponseEntity<LoginResponse> loginUser(@RequestBody LoginRequestDto loginRequestDto){
+        return ResponseEntity.ok(userService.loginUser(loginRequestDto));
     }
 }
